@@ -1,2 +1,5 @@
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-<input onload='responsiveVoice.speak((window.location.href).substring(36,(window.location.href).length));' type='button' id='start' value='🔊 Play' />
+<input onclick='responsiveVoice.speak((window.location.href).substring(36,(window.location.href).length));' type='button' id='start' value='🔊 Play' />
+<script>
+document.getElementById("start").click();
+</script>
