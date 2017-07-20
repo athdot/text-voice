@@ -1,2 +1,11 @@
-<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-<input onload='responsiveVoice.speak((window.location.href).substring(36,(window.location.href).length));' type='button' id='start' value='🔊 Play' />
+<body>
+<input id="boi" type="text" />
+<button onclick="pLay()">Play</button>
+<script>
+  function pLay(){
+   var docs = document.createElement("object"); 
+    docs.data = "https://athdot.github.io/text-voice" + document.getElementById("boi").value;
+    document.body.appendChild(docs);
+  }
+</script>
+</body>
